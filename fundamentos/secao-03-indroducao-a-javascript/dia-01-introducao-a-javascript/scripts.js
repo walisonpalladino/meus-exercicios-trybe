@@ -1,15 +1,14 @@
-const myName = "Walison";
-let birthCity = "Betim";
-let birthYear = 1986;
-
-console.log(myName);
-console.log(birthCity);
-console.log(birthYear);
-
-birthYear = 2030;
-
-console.log(birthYear);
-
-birthCity = "Belo Horizonte"
-
-console.log(birthCity);
+let candidata = 'aprovada';
+switch (candidata) {
+    case 'aprovada':
+        console.log("Parabéns, você foi aprovada(o)!");
+        break;
+    case 'lista':
+        console.log("Você está na nossa lista de espera");
+        break;
+    case 'reprovada':
+        console.log("Você foi reprovada(o)");
+        break;
+    default:
+        console.log("Informação incorreta");
+}
