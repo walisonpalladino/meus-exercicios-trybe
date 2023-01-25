@@ -32,14 +32,35 @@
 //     console.log("Z é maior");
 // }
 
-const valor = 0;
+// const valor = 0;
 
 // retornar positivo, negativo ou zero
 
-if (valor > 0) {
-    console.log("Positivo");
-} else if (valor < 0) {
-    console.log("Negativo");
-} else {
-    console.log("Zero");
-}
+// if (valor > 0) {
+//     console.log("Positivo");
+// } else if (valor < 0) {
+//     console.log("Negativo");
+// } else {
+//     console.log("Zero");
+// }
+
+const anguloA = 40;
+const anguloB = 40;
+const anguloC = 100;
+
+// angulos devem somar 180 para serem válidos
+// angulo será invalido caso seja negativo
+
+let somaAngulos = anguloA + anguloB + anguloC;
+let anguloValido = anguloA > 0 && anguloB > 0 && anguloC > 0;
+
+if (anguloValido) {
+    if (somaAngulos === 180) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
+    } else {
+        console.log("Ângulo inválido");
+    } 
+
