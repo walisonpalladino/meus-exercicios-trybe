@@ -40,10 +40,11 @@
 // const num1 = 20;
 // const num2 = 30;
 
-// function maiorNumero(num1, num2) {
-//     if (num1 > num2) {
-//         return num1 + ' maior que ' + num2;
-//     } else {
-//         return num2 + ' maior que ' + num1;
-//     }
-// }
+function maiorNumero(num1, num2) {
+    if (num1 > num2) {
+        return num1 + ' maior que ' + num2;
+    } else {
+        return num2 + ' maior que ' + num1;
+    }
+}
+console.log(maiorNumero(20, 30));
