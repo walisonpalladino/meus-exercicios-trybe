@@ -68,6 +68,32 @@
       const tagSection1 = document.createElement('section');
       tagSection1.className = 'center-content';
       tagMain.appendChild(tagSection1);
+
+      const tagP = document.createElement('p');
+      tagP.innerHTML = "Texto Inserido Aqui!";
+      tagSection1.appendChild(tagP);
+
+      const tagSection2 = document.createElement('section');
+      tagSection2.className = 'left-content';
+      tagMain.appendChild(tagSection2);
+
+      const tagSection3 = document.createElement('section');
+      tagSection3.className = 'rigth-content';
+      tagMain.appendChild(tagSection3);
+
+      const newImg = document.createElement('img');
+      newImg.className = 'small-image';
+      newImg.src = 'https://picsum.photos/200';
+      tagSection2.appendChild(newImg);
+
+      const newList = document.createElement('ul');
+      tagSection3.appendChild(newList);
+      const listNumbers = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+      for (let num in listNumbers) {
+        const tagList = document.createElement('li');
+        tagList.innerHTML = listNumbers[num];
+        newList.appendChild(tagList);
+      }
       
     </script>
   </body>
